@@ -2,8 +2,8 @@
 
 //Database
 $host = "localhost";
-$db_id = "myweb";
-$db_pw = "abc123";
+$db_id = "dm";
+$db_pw = "dm6362";
 $db_name = "myweb";
 
 //server

@@ -12,12 +12,11 @@
 		include("../../config.php");
 	}
 
-	
 	if(!$_SESSION["login"] && $_SERVER['REQUEST_URI'] != "/lib/loginAction.php")
 		exit("<script>location.href('/')</script>");	
 	$id = $_SESSION["id"];	
- 
 	$falsePath = "$apache_path/users/$id/";
+
 	//$falsePath = "/home/$id/public_html";
 	
     function checkUserDir($id) {
@@ -149,7 +148,7 @@
 	function getLocalFiles($id, $dir){
 
 		$src = pathChecker($id, $dir, null);
-        
+		
 		$handle = opendir($src);
 		
 		$list = array();

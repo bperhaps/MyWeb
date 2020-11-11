@@ -17,7 +17,7 @@
             if(mysqli_num_rows($arr)==1){
                 $arr = $arr->fetch_assoc();
 		
-                $_SESSION["id"] = $arr["homeid"];
+		$_SESSION["id"] = $arr["id"];
 		$_SESSION["login"] = true;
                 exit('<script>location.href="../list.php"</script>');
             } else {
