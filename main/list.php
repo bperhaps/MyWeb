@@ -1,5 +1,4 @@
 <?php
-
 	include "./lib/functions.php";
 
 	if(isset($_GET['dir']))
