@@ -404,7 +404,7 @@ function upper() {
 }
 
 function mypage() {
-    window.open("~<?=$id?>");
+    window.open("/users/<?=$id?>");
 }
 
 function rename(fname) {
